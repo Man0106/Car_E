@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".HomeActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/edtNama"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Alamat Asal" />
+
+            <EditText
+                android:id="@+id/edtAlamatAsal"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="200dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Alamat Tujuan" />
+
+            <EditText
+                android:id="@+id/edtAlamatTujuan"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="230dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="280dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Proyek" />
+
+            <EditText
+                android:id="@+id/edtProjek"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="310dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="360dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Tanggal Berangkat" />
+
+            <TextView
+                android:id="@+id/txtTanggalBerangkat"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="390dp" />
+
+            <ImageButton
+                android:id="@+id/imgbtnberangkat"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="390dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="440dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Tanggal Selesai" />
+
+            <TextView
+                android:id="@+id/txtTanggalSelesai"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="470dp" />
+
+            <ImageButton
+                android:id="@+id/imgbtnselesai"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="470dp" />
+
+            <RadioGroup
+                android:id="@+id/RGWay"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="520dp"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdoOne"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="One Way"
+                android:onClick="RadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/rdoTwo"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Two Way"
+                android:onClick="RadioButtonClicked"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="580dp"
+                android:text="Request" />
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+</LinearLayout>

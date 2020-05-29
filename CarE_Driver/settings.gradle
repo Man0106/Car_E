@@ -1,0 +1,2 @@
+rootProject.name='CarE_Driver'
+include ':app'

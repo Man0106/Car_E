@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnTheWayActivity">
+
+    <TextView
+        android:id="@+id/travelId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txtcountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnstartcd"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtcountdown"
+        android:layout_centerHorizontal="true"
+        android:text="Start"
+        android:textSize="23sp"
+        />
+
+    <Button
+        android:id="@+id/btnstopcd"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnstartcd"
+        android:layout_centerHorizontal="true"
+        android:text="Stop"
+        android:textSize="23sp"/>
+</RelativeLayout>

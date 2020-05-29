@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtreqnama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Nama"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtreqtglberangkat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="50dp"
+                        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:text="Tanggal Berangkat"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtreqtglselesai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="240dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Tanggal Selesai"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtreqproyek"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_event_available_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Proyek"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtreqdari"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_location_city_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Dari"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/txtreqtujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center_vertical"
+            android:text="Tujuan"
+            android:textSize="16sp"
+            />
+
+
+
+                <ImageButton
+                    android:id="@+id/imgbtnAccept"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="90dp"
+                    android:background="@drawable/ic_check_black_24dp"
+                    android:backgroundTint="@android:color/holo_green_light"
+                    android:layout_marginTop="200dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imgbtnCancel"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="300dp"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:background="@drawable/ic_clear_black_24dp"
+                    android:layout_marginTop="200dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

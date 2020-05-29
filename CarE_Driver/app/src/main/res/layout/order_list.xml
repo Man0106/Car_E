@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/namaPenumpang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Nama Penumpang"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/namaProyek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaPenumpang"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Nama Proyek"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaProyek"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Dari"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/strip"
+                android:layout_width="62dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/namaProyek"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/dari"
+                android:background="@drawable/ic_arrow_forward_black_24dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namaProyek"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@id/strip"
+                android:text="Tujuan"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/perjalanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dari"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Perjalanan"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tglBerangkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perjalanan"
+                android:layout_marginStart="20dp"
+
+                android:layout_marginTop="20dp"
+                android:text="Tanggal_Be"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/strip1"
+                android:layout_width="50dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/perjalanan"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/tglBerangkat"
+                android:background="@drawable/ic_arrow_forward_black_24dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tglSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perjalanan"
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_toEndOf="@id/strip1"
+                android:text="Tanggal_Sel"
+                android:textSize="19sp" />
+
+            <ImageButton
+                android:id="@+id/bpm"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/namaPenumpang"
+                android:layout_marginStart="60dp"
+                android:layout_toRightOf="@id/tujuan"
+                android:src="@drawable/ic_directions_car_black_24dp"
+                />
+
+            <TextView
+                android:id="@+id/mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bpm"
+                android:layout_toRightOf="@id/tujuan"
+                android:layout_marginStart="60dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

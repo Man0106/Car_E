@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bgsucofindo"/>
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sucofind"
+        android:layout_below="@id/Top"
+        android:layout_marginTop="40dp"/>
+    
+
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:paddingLeft="10dp"
+            android:hint="Email"
+            android:background="@drawable/edt_oval"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/edtEmail"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:paddingLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edt_oval"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/edtPassword"
+            android:background="@drawable/btn_oval"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login" />
+
+
+</RelativeLayout>
