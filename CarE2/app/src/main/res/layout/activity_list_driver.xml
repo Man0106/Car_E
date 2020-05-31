@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListDriverActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="422dp"
+        android:layout_marginTop="120dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Nama" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Asal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tujuan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Proyek" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Perjalanan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tanggal Berangkat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tanggal Selesai" />
+        <!--        /////////////////////////////////////////-->
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Nama" />
+
+        <TextView
+            android:id="@+id/txtAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Asal" />
+
+        <TextView
+            android:id="@+id/txtTujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tujuan" />
+
+        <TextView
+            android:id="@+id/txtProyek"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Proyek" />
+
+        <TextView
+            android:id="@+id/txtPerjalanan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Perjalanan" />
+
+        <TextView
+            android:id="@+id/txtTgl_B"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="170dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tgl Berangkat" />
+
+        <TextView
+            android:id="@+id/txtTgl_S"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:gravity="center_vertical"
+            android:paddingStart="5dp"
+            android:text="Tgl Selesai" />
+
+        <!--        ///////////////////////////////////////////-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="260dp"
+            android:text="Pilih Driver" />
+
+        <RadioGroup
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:layout_marginStart="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/A"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Driver A"/>
+                    <RadioButton
+                        android:id="@+id/B"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Driver B" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/C"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Driver C"/>
+                    <RadioButton
+                        android:id="@+id/D"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:text="Driver D" />
+                </LinearLayout>
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/Callender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtIDDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="370dp"
+            android:text="Submit" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
